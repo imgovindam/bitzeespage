@@ -84,8 +84,8 @@ const Home = () => {
                 alt="lightining"
               />
             </motion.div>
-            <div className="text-[34px]  font-sans font-semibold">
-              <span className="leading-3">Lightning Fast </span> <br></br>
+            <div className="text-[34px]  font-body font-medium">
+              <span className="leading-4">Lightning Fast </span> <br></br>
               Investing & Trading in
               <motion.span
                 initial={{ x: -40 }}
@@ -93,8 +93,7 @@ const Home = () => {
                 transition={{ repeat: Infinity, repeatType: "reverse" }}
                 className="text-blue-700"
               >
-                {" "}
-                Cryptos{" "}
+                Cryptos
               </motion.span>
             </div>
           </div>
@@ -102,11 +101,11 @@ const Home = () => {
         <div className="text-white absolute bottom-72 flex justify-evenly w-1/3 left-24 ">
           <div className="px-4 py-4 border-l-2  ">
             <h4 className="text-gray-500">built For</h4>
-            <h2 className="font-semibold text-[20px]">Super Traders</h2>
+            <h2 className="font-medium text-[20px] ">Super Traders</h2>
           </div>
           <div className="px-4 py-4 border-l-2 ">
             <h4 className="text-gray-500">built For</h4>
-            <h2 className="font-semibold text-[20px]">Long Term Investors</h2>
+            <h2 className="font-medium text-[20px]">Long Term Investors</h2>
           </div>
         </div>
         {/* <div className="relative  w-1/3">
@@ -185,7 +184,7 @@ const Home = () => {
           </motion.div>
         </div>
         <div className="  w-1/3 left-24 px-2 py-2 absolute bottom-[12%]">
-          <h2 className="text-gray-500 font-sans font-semibold text-sm">
+          <h2 className="text-gray-500 font-body font-medium text-sm">
             Open your <span className="text-blue-700"> Free </span>demate
             account in minutes!
           </h2>
@@ -195,7 +194,7 @@ const Home = () => {
           whileHover="hover"
           className="text-white absolute -bottom-[-2%] left-24"
         >
-          <button className="px-8  ease-in-out delay-100 py-3 transition-colors duration-300 hover:bg-blue-300 bg-blue-600 rounded-lg text-gray-300 font-semibold ">
+          <button className="px-8  ease-in-out delay-100 py-3 transition-colors duration-300 hover:bg-blue-300 bg-[#6610f2] rounded-lg text-gray-300 font-medium ">
             Start now
             <span className="gap-4">
               <ArrowForwardIcon />

@@ -55,7 +55,7 @@ const About = () => {
             />
           </motion.div>
 
-          <div className="text-[34px]  font-sans font-semibold p-8 ">
+          <div className="text-[34px]  font-sans font-medium p-8 ">
             <span className="leading-3 text-white ">Building Awesome </span>
 
             <span className="text-blue-400">Trading & Investing Products</span>
@@ -73,7 +73,7 @@ const About = () => {
 
           <motion.button
             whileHover={{ scale: 1.2, originX: 0, color: "#add8e6" }}
-            className="px-8 py-3 mt-4 ease-in-out delay-100 hover:bg-blue-300 bg-blue-600 rounded-lg text-gray-300 font-semibold transition-colors duration-300"
+            className="px-8 py-3 mt-4 ease-in-out delay-100 font-body hover:bg-blue-300 bg-[#6610f2] rounded-lg text-gray-300 font-medium transition-colors duration-300"
           >
             Start now
             <span className="gap-4">

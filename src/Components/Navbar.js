@@ -100,11 +100,11 @@ const Navbar = () => {
 
   const renderItems = navListMenuItems.map(({ title, description }) => (
     <a href="#" key={title}>
-      <MenuItem className="grid grid-rows-6">
-        <Typography color="blue-gray" className="mb-1 row-span-3">
+      <MenuItem className="grid grid-cols-12 hover:bg-blue-gray-200">
+        <Typography color="blue-gray" className="mb-1 col-span-6">
           {title}
         </Typography>
-        <Typography color="gray" className="font-normal row-span-3">
+        <Typography color="gray" className="font-normal text-black col-span-6">
           {description}
         </Typography>
       </MenuItem>
@@ -113,11 +113,19 @@ const Navbar = () => {
   const renderSupportItems = supportListMenuItems.map(
     ({ title, description }) => (
       <a href="#" key={title}>
-        <MenuItem>
-          <Typography variant="h6" color="blue-gray" className="mb-1">
+        <MenuItem className="grid grid-cols-12 hover:bg-blue-gray-200 transition-all">
+          <Typography
+            variant="h6"
+            color="blue-gray"
+            className="mb-1 col-span-6 font-body"
+          >
             {title}
           </Typography>
-          <Typography variant="small" color="gray" className="font-normal">
+          <Typography
+            variant="small"
+            color="gray"
+            className="font-body col-span-6 text-black"
+          >
             {description}
           </Typography>
         </MenuItem>
@@ -125,7 +133,7 @@ const Navbar = () => {
     )
   );
   return (
-    <div className="bg-[#007bff] z-10 text-white cursor-pointer px-16 h-16 fixed top-0 w-full flex items-center justify-around">
+    <div className="bg-[#6610f2] z-10 text-white cursor-pointer px-16 h-16 fixed top-0 w-full flex items-center justify-around">
       <div className="w-1/4">
         <img src="https://bitzees.com/images/logo.png" alt="Logo" />
       </div>
@@ -153,7 +161,7 @@ const Navbar = () => {
                   className="font-normal"
                 >
                   <MenuItem className="hidden items-center gap-2 text-blue-gray-900 lg:flex lg:rounded-full">
-                    <span className="text-white font-sans text-[17px]">
+                    <span className="text-white font-body text-[18px] ">
                       {" "}
                       Products{" "}
                     </span>{" "}
@@ -166,7 +174,7 @@ const Navbar = () => {
                   </MenuItem>
                 </Typography>
               </MenuHandler>
-              <MenuList className="hidden w-[36rem] grid-cols-7 text-center p-1 overflow-visible lg:grid">
+              <MenuList className="hidden w-[20rem] grid-cols-1 justify-around text-center p-1 overflow-visible lg:grid">
                 {/* <Card
                   color="blue"
                   shadow={false}
@@ -181,7 +189,7 @@ const Navbar = () => {
               </MenuList>
             </Menu>
             <MenuItem className="flex items-center gap-2 text-blue-gray-900 lg:hidden">
-              <span className="text-white font-sans "> Products </span>
+              <span className="text-white "> Products </span>
             </MenuItem>
             <ul className="ml-6 flex w-full flex-col gap-1 lg:hidden">
               {renderItems}
@@ -205,7 +213,7 @@ const Navbar = () => {
                   className="font-normal"
                 >
                   <MenuItem className="hidden items-center gap-2 text-blue-gray-900  lg:flex lg:rounded-full">
-                    <span className="text-white font-sans text-[17px]">
+                    <span className="text-white font-body text-[18px]">
                       Support
                     </span>{" "}
                     <ChevronDownIcon
@@ -292,7 +300,7 @@ const Navbar = () => {
             </ul>
           </div>
         </div> */}
-        <div className="text-white  font-sans items-center hover:bg-[#b6d0e9] px-2 py-2 rounded-lg">
+        <div className="text-white font-body text-[18px] items-center hover:bg-[#b6d0e9] px-2 py-2 rounded-lg">
           Pricing
         </div>
       </div>
