@@ -1,38 +1,169 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  /* background-color: burlywood; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Navbar.css */
+
+/* .nav-item:hover {
+  background-color: #0056b3;
+  cursor: pointer;
+} */
+
+/* Style for the product box */
+/* .product-box {
+  display: none;
+  position: absolute;
+  
+  background-color: #0056b3;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  top: 100%;
+  left: 10;
+
+} */
+
+/* .nav-item:hover .product-box {
+  display: block;
+  
+} */
+
+/* Navbar.css */
+
+/* ... existing styles ... */
+
+
+
+
+
+/* Navbar.css */
+
+/* ... existing styles ... */
+
+
+/* Navbar.css */
+
+/* ... existing styles ... */
+
+/* Navbar.css */
+
+/* ... existing styles ... */
+
+.product-box {
+  display: none;
+  position: absolute;
+  background-color: #be5151;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  top: calc(100% + 5px);
+  left: 20;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav-item:hover .product-box,
+.product-box.open {
+  display: block;
+  /* Show the product box on hover or when it's open */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.product-item {
+  cursor: pointer;
+  padding: 5px 0;
+}
+
+.product-item:hover {
+  background-color: #f0f0f0;
+}
+
+/* Style for selected product item */
+.product-item.selected {
+  background-color: #007bff;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.A {
+  background-image: linear-gradient(to right, rgba(247, 247, 247, 0), rgba(255, 0, 0, 1)) url("/public/stock-trading-6525084_1920.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  background-position: center;
+
+  height: 100vh;
+  /* z-index: 0; */
+  width: 100%;
+  /* position: relative; */
 }
 
-@keyframes App-logo-spin {
+/* .B {
+  position: absolute;
+  background-color: blueviolet;
+} */
+
+/* .A::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(2, 2, 34, 0.9);
+
+  z-index: -1;
+
+} */
+
+/* .text-container {
+  position: absolute;
+  top: 20%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  color: white;
+
+} */
+.text-container {
+  position: absolute;
+  top: 30%;
+  left: 28%;
+  transform: translate(-50%, -50%);
+  color: white;
+  /* text-align: center; */
+}
+
+.D {
+  background-image: url(/public/ai-generated-7938197_1920.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  padding: 10px;
+  margin: 10px;
+}
+
+
+/* @keyframes rotate {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+
+svg {
+  animation: rotate 2s linear;
+} */
+
+.mobile {
+  background-image: url(/public/phone.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* height: 500px;
+  padding: 30px;
+  margin: 10px; */
 }
